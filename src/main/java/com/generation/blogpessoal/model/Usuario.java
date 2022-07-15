@@ -70,6 +70,14 @@ public class Usuario {
 			this.id = id;
 		}
 
+		public String getFoto() {
+			return foto;
+		}
+
+		public void setFoto(String foto) {
+			this.foto = foto;
+		}
+
 		public String getNome() {
 			return nome;
 		}
@@ -94,14 +102,6 @@ public class Usuario {
 			this.senha = senha;
 		}
 
-		public String getFoto() {
-			return foto;
-		}
-
-		public void setFoto(String foto) {
-			this.foto = foto;
-		}
-
 		public List<Postagem> getPostagem() {
 			return postagem;
 		}
@@ -109,6 +109,5 @@ public class Usuario {
 		public void setPostagem(List<Postagem> postagem) {
 			this.postagem = postagem;
 		}
-		
 		
 	}
