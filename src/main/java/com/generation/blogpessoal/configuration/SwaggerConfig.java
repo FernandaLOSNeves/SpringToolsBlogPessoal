@@ -14,24 +14,24 @@ import io.swagger.v3.oas.models.responses.ApiResponses;
 
 @Configuration
 public class SwaggerConfig {
-	
+
 	@Bean
 	public OpenAPI springBlogPessoalOpenAPI() {
 		return new OpenAPI()
 				.info(new Info()
 					.title("Projeto Blog Pessoal")
-					.description("Projeto Blog Pessoal - Fernanda Neves- Generation Brasil")
+					.description("Projeto Blog Pessoal - Generation Brasil")
 					.version("v0.0.1")
 				.license(new License()
 					.name("Generation Brasil")
 					.url("https://brazil.generation.org/"))
 				.contact(new Contact()
-					.name("Fernanda Neves")
-					.url("https://github.com/FernandaLOSNeves")
-					.email("fernandalosneves@gmail.com")))
+					.name("Conteudo Generation")
+					.url("https://github.com/conteudoGeneration")
+					.email("conteudogeneration@gmail.com")))
 				.externalDocs(new ExternalDocumentation()
 					.description("Github")
-					.url("https://github.com/FernandaLOSNeves/SpringToolsBlogPessoal/tree/Swagger"));
+					.url("https://github.com/conteudoGeneration/"));
 	}
 
 	@Bean
@@ -59,5 +59,5 @@ public class SwaggerConfig {
 		return new ApiResponse().description(message);
 
 	}
-
+	
 }
