@@ -24,7 +24,12 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		//video
 		auth.userDetailsService(userDetailsService);
-		
+		// usuario em memoria-novo
+				 auth.inMemoryAuthentication()
+					.withUser("root")
+					.password(passwordEncoder().encode("root"))
+					.authorities("ROLE_USER");
+
 	}
 	
 	@Bean
