@@ -30,7 +30,7 @@ public class Postagem {
 	@Id
 	//essa linha aqui embaixo é o auto_increment do mysql pro id, o generation n tem nada a ver com a Gen, é o comando.
 	@GeneratedValue( strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	
 	//notnull não aceita titulos nulos
 	@NotNull
@@ -65,11 +65,11 @@ public class Postagem {
 		this.usuario = usuario;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
